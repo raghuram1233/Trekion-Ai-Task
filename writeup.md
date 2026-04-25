@@ -2,6 +2,8 @@
 
 ## Approach to Parsing Binary Formats
 
+**There is a major issue with output of task 1 even though the data has been parsed the visualization part is not working properly as the graphs keep fluctuating/Flickering after every frame is proccessed.**
+
 The project required parsing two proprietary binary formats: `.imu` files containing IMU telemetry data and `.vts` files containing video frame-to-timestamp mappings. For the IMU data, we implemented a structured approach using Python's `struct` module to unpack binary records. Each IMU record consists of 80 bytes with a specific format: a 64-bit timestamp followed by 10 float values (accelerometer, gyroscope, magnetometer, and temperature) and 32 padding bytes.
 
 The parsing logic involved:
@@ -41,7 +43,9 @@ Additionally, we integrated MediaPipe Hands for 3D hand tracking and handedness 
 
 ### Binary Format Parsing
 
-The primary challenge was reverse-engineering the binary formats without official specifications. We relied on trial-and-error with struct formats and validation through statistical analysis of the parsed data. Ensuring timestamp accuracy was critical for proper sensor synchronization.
+The main Challenge was to visualize the data in real-time, and generating the output side by side.
+
+Another challenge was reverse-engineering the binary formats without official specifications. We relied on trial-and-error with struct formats and validation through statistical analysis of the parsed data. Ensuring timestamp accuracy was critical for proper sensor synchronization.
 
 ### Sensor Synchronization
 
