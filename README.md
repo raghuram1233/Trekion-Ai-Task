@@ -70,6 +70,9 @@ python Task3/detect_pipeline.py
 ```
 *Output: Task3/detect_output.mp4*
 
+### Output Files
+   Can be Found on https://drive.google.com/drive/folders/1m8vXuIEDgreiBRkwQW54GbP_ZJTk1icA?usp=sharing
+
 ## Technical Implementation Details
 
 *   **Binary Parsing**: IMU records are parsed using explicit `struct` unpacking (int64 timestamp + 10x float32 sensors + 32-byte padding).
