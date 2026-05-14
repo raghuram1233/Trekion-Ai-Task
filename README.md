@@ -1,6 +1,6 @@
-# Trekion.ai Robotics Perception Pipeline
+# Robotics Perception Pipeline
 
-This repository contains a production-grade multi-sensor perception and telemetry pipeline developed for the Trekion.ai technical assignment. The project implements a complete robotics stack for data synchronization, depth estimation, and scene understanding.
+This repository contains a production-grade multi-sensor perception and telemetry pipeline. The project implements a complete robotics stack for data synchronization, depth estimation, and scene understanding.
 
 ## Overview
 
